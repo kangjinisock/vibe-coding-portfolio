@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>디컴 - 의료정보 서비스</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="#">
+        <span class="brand-mark">D:</span>
+        <span class="brand-text">DiCOM</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="메뉴 열기">☰</button>
+
+      <nav class="nav" id="mainNav">
+        <a href="#intro">디컴 소개</a>
+        <a href="#service">서비스 안내</a>
+        <a href="#faq">FAQ</a>
+        <a href="#install">설치 (iOS/Android)</a>
+        <a href="#contact">웹에서 로그인</a>
+        <a href="#contact">입점 등록 문의</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="intro">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>복잡한 절차없이 App.으로 주문하고 바로 받아보세요.</h1>
+          <p>
+            매장에 방문하는 번거로움 없이 스마트폰 앱에서<br />
+            제품을 확인하고 간편하게 주문하세요.
+          </p>
+
+          <div class="store-buttons" id="install">
+            <button class="store-btn" data-store="google">Google Play</button>
+            <button class="store-btn" data-store="apple">App Store</button>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="blob"></div>
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <p class="screen-title">주문 내역</p>
+              <div class="screen-card">
+                <div class="row"><strong>고객 정보</strong></div>
+                <div class="row"><span>고객명</span><strong>홍*동</strong></div>
+                <div class="row"><strong>주문 정보</strong></div>
+                <div class="row"><span>주문 번호</span><strong>2307-01A</strong></div>
+                <div class="row"><span>주문 일자</span><strong>1995-05-20</strong></div>
+                <div class="row"><span>운송장 번호</span><strong>1234567890</strong></div>
+                <div class="row"><span>출고지</span><strong>가나상사</strong></div>
+                <div class="row"><span>출고 주소</span><strong>서울특별시 강남구 역삼동</strong></div>
+                <div class="row"><span>입고지</span><strong>가다건축</strong></div>
+                <div class="row"><span>입고 주소</span><strong>대전광역시 서구 대덕대로</strong></div>
+              </div>
+              <p class="screen-foot">※ 본 문서는 앱 내 확인용 예시 화면입니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-strip" id="service">
+      <div class="container">
+        <h2>
+          디컴은 오프라인 위주의 입/출하하는 방식이 아닌<br />
+          <span>모바일 앱을 통한 주문 및 배송해 드리는 서비스</span>입니다.
+        </h2>
+      </div>
+    </section>
+
+    <section class="content" id="faq">
+      <div class="container">
+        <h3>왜 디컴인가요?</h3>
+        <div class="cards">
+          <article class="card">
+            <h4>간편한 견적 및 주문</h4>
+            <p>앱에서 바로 견적 및 주문하고 주문 내역을 확인 및 출고 예정일을 확인할 수 있습니다.</p>
+          </article>
+          <article class="card">
+            <h4>최저가 보장</h4>
+            <p>간소화된 운송 및 출고 시스템으로 유통 마진을 최소화합니다.</p>
+          </article>
+          <article class="card" id="contact">
+            <h4>빠른 배송</h4>
+            <p>불필요한 절차를 줄여 빠른 출고와 배송으로 더 빠르게 받으실 수 있습니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
